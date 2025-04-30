@@ -1,0 +1,23 @@
+/* Admin CSS for woo-extend-brix-and-masons plugin */
+.wrap .hid-wp-woo-extend-brix-and-masons-admin-content {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.hid-wp-woo-extend-brix-and-masons-form-table th {
+    width: 200px;
+    padding: 20px 10px;
+}
+
+.hid-wp-woo-extend-brix-and-masons-form-table td {
+    padding: 15px 10px;
+}
+
+.hid-wp-woo-extend-brix-and-masons-form-table input[type="text"],
+.hid-wp-woo-extend-brix-and-masons-form-table textarea {
+    width: 100%;
+    max-width: 500px;
+}

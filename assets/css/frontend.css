@@ -1,0 +1,220 @@
+/* Frontend CSS for woo-extend-brix-and-masons plugin */
+.hid-wp-woo-extend-brix-and-masons-container {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.hid-wp-woo-extend-brix-and-masons-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #0073aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.hid-wp-woo-extend-brix-and-masons-button:hover {
+    background-color: #008ec2;
+}
+
+
+/* LGA Selector code */
+/* Nigeria Location Selector Styles */
+.nigeria-location-selector-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nigeria-location-selector-container h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eaeaea;
+    font-weight: 600;
+}
+
+.location-selector-form {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+    font-size: 16px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.lga-display-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.lga-display-container h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.lga-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lga-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.lga-item {
+    flex: 1;
+    min-width: calc(25% - 15px);
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border-left: 3px solid #3498db;
+    color: #34495e;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.lga-item:hover {
+    background: #e9f5fe;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .lga-item {
+        min-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .nigeria-location-selector-container {
+        padding: 15px;
+    }
+    
+    .lga-item {
+        min-width: 100%;
+    }
+    
+    .form-control {
+        padding: 10px 12px;
+    }
+}
+
+/* Product Search form */
+
+/* Product Search Form */
+.bm-product-search-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.bm-search-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.bm-search-field label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.bm-product-search-form input[type="text"],
+.bm-product-search-form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.bm-product-search-form input[type="text"]:focus,
+.bm-product-search-form select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.bm-search-button {
+    grid-column: 1 / -1;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: end;
+}
+
+.bm-search-button:hover {
+    background: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .bm-product-search-form {
+        grid-template-columns: 1fr;
+    }
+}

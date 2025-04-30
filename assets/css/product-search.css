@@ -1,0 +1,65 @@
+/* Product Search Form */
+.bm-product-search-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.bm-search-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.bm-search-field label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.bm-product-search-form input[type="text"],
+.bm-product-search-form select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.bm-product-search-form input[type="text"]:focus,
+.bm-product-search-form select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.bm-search-button {
+    grid-column: 1 / -1;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: end;
+}
+
+.bm-search-button:hover {
+    background: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .bm-product-search-form {
+        grid-template-columns: 1fr;
+    }
+}
